@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Asteroids</title>
+        <link href='./style.css' rel='stylesheet' type='text/css'>
+        <meta content="Asteroids" property="og:title">
+        <meta content="A recreation of the classic Asteroids Arcade Game." property="og:description">
+        <meta content="Caltrop" property="og:site_name">
+        <meta name="theme-color" content="#FE019A">
+        <meta name="robots" content="index, follow">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel=" icon" href="./favicon.png">
+    </head>
+    <body>
+        <audio loop><source src="./audio/engine.mp3" type="audio/mpeg"></audio>
+        <audio><source src="./audio/boom1.mp3" type="audio/mpeg"></audio>
+        <audio><source src="./audio/boom2.mp3" type="audio/mpeg"></audio>
+        <audio><source src="./audio/boom3.mp3" type="audio/mpeg"></audio>
+        <audio><source src="./audio/boom4.mp3" type="audio/mpeg"></audio>
+        <audio><source src="./audio/shot.mp3" type="audio/mpeg"></audio>
+        <audio><source src="./audio/shotAlien.mp3" type="audio/mpeg"></audio>
+        <div class="score">
+            <p id="score">SCORE: 0</p>
+        </div>
+        <div class="wave">
+            <p id="wave">00</p>
+        </div>
+
+        <div class="pausescreen">
+            <h1>ASTEROIDS</h1>
+            <p class="blinking">Press any key to play</p>
+        </div>
+
+        <div class="pausescreen" id="gameover">
+            <h1>GAME OVER</h1>
+            <p>Press ESC to continue</p>
+        </div>
+        <canvas id="c"></canvas>
+
+        <script src="./setup.js"></script>
+        <script src="./classes/Vector.js"></script>
+        <script src="./classes/DestructionPatricle.js"></script>
+        <script src="./classes/EngineParticle.js"></script>
+        <script src="./classes/Asteroid.js"></script>
+        <script src="./classes/Projectile.js"></script>
+        <script src="./classes/UFOprojectile.js"></script>
+        <script src="./classes/UFO.js"></script>
+        <script src="./classes/ShipPart.js"></script>
+        <script src="./classes/Player.js"></script>
+        <script src="./classes/GameManager.js"></script>
+        <script src="./classes/AudioManager.js"></script>
+        <script src="./render.js"></script>
+    </body>
+</html>
